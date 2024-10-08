@@ -5,7 +5,11 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'ls'
-                sh 'pip install --user robotframework'
+                sh '''
+                mkdir -p ~/.local/lib/python3.12/site-packages
+                export PYTHONUSERBASE=$HOME/.local
+                pip install --user robotframework
+                '''
                 sh 'robot tests/web/teste.robot'
             }
         }
