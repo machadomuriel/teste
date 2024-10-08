@@ -3,4 +3,4 @@ Documentation    Teste
 
 *** Test Cases ***
 Teste
-    Log    Teste
+    Log To Console    Teste do Muriel
