@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'ls'
+                sh 'pip install robotframework'
                 sh 'robot tests/web/teste.robot'
             }
         }
