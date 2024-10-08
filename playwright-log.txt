@@ -1,0 +1,118 @@
+{"level":30,"time":"2024-10-08T12:26:57.688Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Listening on 56012"}
+(node:15229) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-08T12:26:58.799Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:26:58.800Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:26:58.810Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:26:58.812Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:26:58.833Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-10-08T12:27:04.215Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-10-08T12:27:04.220Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-10-08T12:27:04.219Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-10-08T12:27:04.233Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-08T12:27:04.234Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"currentBrowser: [object Object]"}
+================= Original suppressed error =================
+{"level":30,"time":"2024-10-08T12:27:07.971Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Error of node method  newPage"}
+browser.newContext: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/playwright-core/.local-browsers/chromium-1097/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --user-data-dir=/var/folders/9v/x6g7l1512wng0_4ggqvrknxm0000gn/T/playwright_chromiumdev_profile-clEJ3G --remote-debugging-pipe --no-startup-window
+<launched> pid=15239
+[pid=15239][err] [15239:259:1008/092703.381685:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.
+[pid=15239][err] [15239:35075:1008/092703.480370:ERROR:trust_store_mac.cc(752)] Error parsing certificate:
+[pid=15239][err] ERROR: The policy qualifiers SEQUENCE is empty
+[pid=15239][err] ERROR: Failed parsing policy qualifiers
+[pid=15239][err] ERROR: Failed parsing certificate policies
+[pid=15239][err] 
+[pid=15239][err] [1008/092705.470703:WARNING:mach_o_image_reader.cc(569)] duplicate __DATA segment at 1 and 2, load command 0x19 2/27, module /System/Library/PrivateFrameworks/CoreWiFi.framework/Versions/A/CoreWiFiOld.dylib, address 0x1095a8000
+[pid=15239][err] [1008/092705.479454:WARNING:mach_o_image_reader.cc(569)] duplicate __DATA segment at 1 and 2, load command 0x19 2/19, module /System/Library/PrivateFrameworks/IO80211.framework/Versions/A/IO80211Old.dylib, address 0x172a02000
+[pid=15239][err] [1008/092706.008762:WARNING:mach_o_image_reader.cc(569)] duplicate __DATA segment at 1 and 4, load command 0x19 4/21, module /System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/Versions/A/WiFiPeerToPeerOld.dylib, address 0x1e256f000
+[pid=15239][err] [1008/092706.595576:WARNING:mach_o_image_reader.cc(569)] duplicate __DATA segment at 1 and 2, load command 0x19 2/26, module /System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLANOld.dylib, address 0x2595d9000
+[pid=15239][err] [1008/092707.775299:WARNING:mach_o_image_reader.cc(569)] duplicate __DATA segment at 1 and 3, load command 0x19 3/24, module /System/Library/Extensions/AppleIntelBDWGraphicsMTLDriver.bundle/Contents/MacOS/AppleIntelBDWGraphicsMTLDriver, address 0x2f680a000
+[pid=15239][err] [1008/092707.920136:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)
+[pid=15239] <process did exit: exitCode=null, signal=SIGTRAP>
+[pid=15239] starting temporary directories cleanup
+    at async _newBrowserContext (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9997:19)
+    at async BrowserState.getOrCreateActiveContext (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10242:23)
+    at async newPage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10356:19)
+    at async PlaywrightServer.newPage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10708:28)
+=============================================================
+{"level":30,"time":"2024-10-08T12:27:07.989Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:8714:11)
+    at takeScreenshot (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:8758:3)
+    at PlaywrightServer.takeScreenshot (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10708:34)
+    at Object.onReceiveHalfClose (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-08T12:27:07.990Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:8714:11)
+    at takeScreenshot (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:8758:3)
+    at PlaywrightServer.takeScreenshot (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10708:34)
+    at Object.onReceiveHalfClose (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-08T12:27:08.037Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:8714:11)
+    at takeScreenshot (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:8758:3)
+    at PlaywrightServer.takeScreenshot (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10708:34)
+    at Object.onReceiveHalfClose (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-08T12:27:08.037Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-10-08T12:27:08.057Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-10-08T12:27:08.057Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-10-08T12:27:08.075Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-10-08T12:27:08.080Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10693:59)
+    at PlaywrightServer.setTimeout (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10943:57)
+    at Object.onReceiveHalfClose (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-08T12:27:08.110Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:27:08.110Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10693:59)
+    at PlaywrightServer.setTimeout (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10943:57)
+    at Object.onReceiveHalfClose (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (/Users/muriel/Documents/teste/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-08T12:27:08.162Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:27:08.162Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-08T12:27:08.357Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-08T12:27:08.357Z","pid":15229,"hostname":"MacBook-Air-de-Muriel.local","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,12 @@
+.idea/*
+.venv/*
+results/*
+!results/.gitkeep   
+*.xml
+*.html
+*.png
+*.yaml
+env/*
+venv/*
+commom/.env.stage
+commom/__pycache__/*
