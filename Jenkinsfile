@@ -10,12 +10,17 @@ pipeline {
                 sh 'python --version'
                 sh 'ls'
                 sh '''
-                echo "HOME: $HOME"
-                mkdir -p $HOME/.local/lib/python3.12/site-packages || { echo "Failed to create directory"; exit 1; }
-                export PYTHONUSERBASE=$HOME/.local
+                # Definindo um diretório temporário para instalação
+                TEMP_DIR=/tmp/.local/lib/python3.12/site-packages
+                mkdir -p $TEMP_DIR || { echo "Failed to create directory"; exit 1; }
+                
+                # Definindo a variável de ambiente PYTHONUSERBASE
+                export PYTHONUSERBASE=/tmp/.local
                 pip install --user robotframework
+                
+                # Executando o Robot Framework
+                robot tests/web/teste.robot
                 '''
-                sh 'robot tests/web/teste.robot'
             }
         }
     }
