@@ -16,7 +16,12 @@ pipeline {
                 
                 # Definindo a variável de ambiente PYTHONUSERBASE
                 export PYTHONUSERBASE=/tmp/.local
+                
+                # Instalando o Robot Framework
                 pip install --user robotframework
+                
+                # Adicionando o diretório ao PATH
+                export PATH=$PATH:/tmp/.local/bin
                 
                 # Executando o Robot Framework
                 robot tests/web/teste.robot
