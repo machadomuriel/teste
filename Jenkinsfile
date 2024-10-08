@@ -10,7 +10,8 @@ pipeline {
                 sh 'python --version'
                 sh 'ls'
                 sh '''
-                mkdir -p $HOME/.local/lib/python3.12/site-packages
+                echo "HOME: $HOME"
+                mkdir -p $HOME/.local/lib/python3.12/site-packages || { echo "Failed to create directory"; exit 1; }
                 export PYTHONUSERBASE=$HOME/.local
                 pip install --user robotframework
                 '''
