@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'ls'
-                sh 'pip install robotframework'
+                sh 'pip install --user robotframework'
                 sh 'robot tests/web/teste.robot'
             }
         }
