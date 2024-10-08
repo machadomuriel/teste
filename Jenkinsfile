@@ -7,8 +7,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
-                sh 'ls'
                 sh '''
                 # Definindo um diretório temporário para instalação
                 TEMP_DIR=/tmp/.local/lib/python3.12/site-packages
